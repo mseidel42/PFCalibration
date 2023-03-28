@@ -240,11 +240,11 @@ PFChargedHadronAnalyzer::analyze(const Event& iEvent,
   LogDebug("PFChargedHadronAnalyzer")<<"START event: "<<iEvent.id().event()
 			 <<" in run "<<iEvent.id().run()<<endl;
   
-
+  /*
    edm::ESHandle<CaloGeometry> pCalo;
    iSetup.get<CaloGeometryRecord>().get( pCalo );
    theCaloGeom = pCalo.product();
-
+  */
 
 
   run  = iEvent.id().run();
@@ -1016,7 +1016,7 @@ float PFChargedHadronAnalyzer::Eta( float theta_ ) {
   return -log(tan(theta_/2.0));
 }
 
-
+/*
 void PFChargedHadronAnalyzer::SaveRecHits(const edm::Event& iEvent, float eta_, float phi_) {
 
   //get rechits
@@ -1082,6 +1082,7 @@ void PFChargedHadronAnalyzer::SaveRecHits(const edm::Event& iEvent, float eta_, 
   
 
 }
+*/
 
 float 
 PFChargedHadronAnalyzer::phi( float x, float y ) {

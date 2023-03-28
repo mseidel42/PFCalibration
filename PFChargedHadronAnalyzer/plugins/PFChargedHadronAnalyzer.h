@@ -209,7 +209,7 @@ class PFChargedHadronAnalyzer : public edm::EDAnalyzer {
   const CaloGeometry*    theCaloGeom;
 
 
-  void SaveRecHits(const edm::Event& iEvent, float eta_, float phi_);
+  //  void SaveRecHits(const edm::Event& iEvent, float eta_, float phi_);
 
 
   void SaveSimHit(const edm::Event& iEvent, float eta_, float phi_);
