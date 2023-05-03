@@ -3,15 +3,15 @@ For Single Pion sample Generation:
 
 (For bash)
 ```
-cmsrel CMSSW_11_0_0_patch1
-cd CMSSW_11_0_0_patch1/src
-git clone -b for_Run3 https://github.com/bkansal/PFCalibration.git
-scram b -j 40
+cmsrel CMSSW_12_6_4
+cd CMSSW_12_6_4/src
+git clone -b Run3with_126XGT https://github.com/kdlong/PFCalibration.git
+scram b -j 8
 cd PFCalibration/PFChargedHadronAnalyzer/test/
 cmsenv
 ```
 
-Using centerally generated Single pion reco sample for Ultralegacy 2016:
+Using centerally generated Single pion reco sample for Run 3:
 ```  
 cmsRun myEDAna.py 
 
@@ -19,6 +19,5 @@ cmsRun myEDAna.py
 source /cvmfs/cms.cern.ch/crab3/crab.sh
 crab submit crab_step_analyser.py
 ```
-For PFcalibration use PFCalibration/PFChargedHadronAnalyzer/test/calibration_code/calibChris.C  
-Note: Please run calibChris.C code on ROOT version 5.xx (it might crash in ROOT version 6.xx)
-
+For PFcalibration use `PFChargedHadronAnalyzer/test/calibration_code/Main_calib.cc`
+See [dedicated README](PFChargedHadronAnalyzer/test/calibration_code/README.md) for instructions.
