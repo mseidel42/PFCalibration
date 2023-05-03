@@ -29,7 +29,7 @@ process.options = cms.untracked.PSet(
 
 )
 from Configuration.AlCa.GlobalTag import GlobalTag
-process.GlobalTag = GlobalTag(process.GlobalTag, '126X_mcRun3_2023_forPU65_v1', '')
+process.GlobalTag = GlobalTag(process.GlobalTag, '126X_mcRun3_2023_forPU65_v4', '')
 
 process.pfChargedHadronAnalyzer = cms.EDAnalyzer(
     "PFChargedHadronAnalyzer",
